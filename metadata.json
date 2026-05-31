@@ -1,0 +1,5 @@
+{
+  "name": "MotionCraft",
+  "description": "Transform static images into engaging videos with creative camera motions. Runs entirely in your browser.",
+  "requestFramePermissions": []
+}
