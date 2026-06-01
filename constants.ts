@@ -127,5 +127,12 @@ export const MOTION_PRESETS: MotionPreset[] = [
     description: 'Zoom in to a specific point',
     icon: 'MousePointerClick',
     params: { zoomStart: 1.0, zoomEnd: 1.5, panXStart: 0.5, panXEnd: 0.5, panYStart: 0.5, panYEnd: 0.5 }
+  },
+  {
+    id: 'custom-path',
+    label: 'Custom Path',
+    description: 'Build a multi-point keyframed camera move',
+    icon: 'Spline',
+    params: { zoomStart: 1.0, zoomEnd: 1.4, panXStart: 0.5, panXEnd: 0.5, panYStart: 0.5, panYEnd: 0.5 }
   }
 ];

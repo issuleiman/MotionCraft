@@ -1,6 +1,28 @@
 
 import React from 'react';
-import * as Icons from 'lucide-react';
+import {
+  Activity,
+  ArrowDown,
+  ArrowDownRight,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  ArrowUpRight,
+  Film,
+  ImagePlay,
+  LucideIcon,
+  Maximize,
+  MousePointerClick,
+  MoveDown,
+  MoveLeft,
+  MoveRight,
+  MoveUp,
+  Repeat,
+  Spline,
+  Tornado,
+  ZoomIn,
+  ZoomOut
+} from 'lucide-react';
 import { MotionPreset } from '../types';
 
 interface MotionCardProps {
@@ -10,7 +32,29 @@ interface MotionCardProps {
 }
 
 export const MotionCard: React.FC<MotionCardProps> = ({ preset, isSelected, onClick }) => {
-  const Icon = (Icons as Record<string, React.ElementType>)[preset.icon] || Icons.Film;
+  const icons: Record<string, LucideIcon> = {
+    Activity,
+    ArrowDown,
+    ArrowDownRight,
+    ArrowLeft,
+    ArrowRight,
+    ArrowUp,
+    ArrowUpRight,
+    Film,
+    ImagePlay,
+    Maximize,
+    MousePointerClick,
+    MoveDown,
+    MoveLeft,
+    MoveRight,
+    MoveUp,
+    Repeat,
+    Spline,
+    Tornado,
+    ZoomIn,
+    ZoomOut
+  };
+  const Icon = icons[preset.icon] || Film;
 
   return (
     <button
